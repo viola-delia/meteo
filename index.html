@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
     <div class="content">
-    <input type="text" placeholder="Enter a city..." class="search-bar"/>
+      <form class="search-form" id="search-form">
+    <input type="text" placeholder="Enter a city..." class="search-bar" id="search-form-input"/>
     <input type="submit" value="Search" class="search-button"/>
+    </form>
     <hr class="top-line"/>
-   
+
 
   </head>
   <body>
      <div class="weather-data">
       <div>
-    <h1>Paris</h1>
+    <h1 id="city">Paris</h1>
     <p class="weather-today">Monday 8:36, Sunny</br>Humidity: <span class="humidity-percentage">82%</span>, Wind: <span class="wind-speed">7.2km/h</span></p>
     </div>
     <p><span class="icon">☀️</span> <span class="temperature">26</span><div class="unit">°C</div></p>
@@ -29,5 +31,6 @@
     <a href="https://awesome-meteo-application.netlify.app/" target="_blank"
       >Netlify</a
     ></div>
+    <script src="src/index.js"></script>
   </body>
 </html>
