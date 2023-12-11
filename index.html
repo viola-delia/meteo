@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="src/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
-    <input type="text" placeholder="Enter a city..." />
-    <input type="submit" value="Search" />
-    <h1>Paris</h1>
+    <div class="content">
+    <input type="text" placeholder="Enter a city..." class="search-bar"/>
+    <input type="submit" value="Search" class="search-button"/>
+    <hr class="top-line"/>
+   
+
   </head>
   <body>
-    <p>Monday 8:36, Sunny</p>
-    <p>Humidity: 82%, Wind: 7.2km/h</p>
-    <p>☀️ 26°C</p>
-    <hr />
+     <div class="weather-data">
+      <div>
+    <h1>Paris</h1>
+    <p class="weather-today">Monday 8:36, Sunny</br>Humidity: <span class="humidity-percentage">82%</span>, Wind: <span class="wind-speed">7.2km/h</span></p>
+    </div>
+    <p><span class="icon">☀️</span> <span class="temperature">26</span><div class="unit">°C</div></p>
+    </div>
+    <hr class="bottom-line"/>
     Coded by
     <a href="https://github.com/viola-delia" target="_blank">Viola D'Elia</a>,
     is open-sourced on
@@ -20,6 +28,6 @@
     and hosted on
     <a href="https://awesome-meteo-application.netlify.app/" target="_blank"
       >Netlify</a
-    >
+    ></div>
   </body>
 </html>

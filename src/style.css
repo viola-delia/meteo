@@ -1,0 +1,71 @@
+.content {
+    display: block;
+    
+    background:aliceblue;
+    padding: 50px;
+    max-width:fit-content;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 30px 50px rgba(96, 126, 174, 0.20);
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(71, 70, 70);
+   
+}
+.search-bar {
+    width: 75%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-button {
+    padding: 15px;
+ width: 18%;
+border-radius: 5px;
+border: none;
+background: rgb(137, 183, 223);
+color: white;
+font-size: 16px;
+}
+
+.weather-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.humidity-percentage, .wind-speed {
+    font-weight: bold;
+    color: rgb(78, 151, 215);
+}
+
+.icon {
+    font-size: 40px;
+    margin-left: 95px;
+    margin-right: -60px;
+    
+}
+
+.temperature {
+    font-size: 70px;
+    font-weight: bold;
+    margin-left: 98px;
+  
+}
+
+.unit {
+
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 5px;
+ 
+}
+
+.top-line, .bottom-line {
+    margin: 30px 0;
+   opacity: 20%;
+}
+
+a {
+    color: rgb(78, 151, 215);
+}
