@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
@@ -17,10 +18,10 @@
   <body>
      <div class="weather-data">
       <div>
-    <h1 id="city">Paris</h1>
+    <h1 id="city"></h1>
     <p class="weather-today">Monday 8:36, Sunny</br>Humidity: <span class="humidity-percentage">82%</span>, Wind: <span class="wind-speed">7.2km/h</span></p>
     </div>
-    <p><span class="icon">☀️</span> <span class="temperature">26</span><div class="unit">°C</div></p>
+    <p><span class="icon">☀️</span> <span class="temperature" id="temperature"></span><div class="unit">°C</div></p>
     </div>
     <hr class="bottom-line"/>
     Coded by
