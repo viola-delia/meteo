@@ -51,7 +51,29 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+let days = ["Wed", "Thu", "Fry", "Sat", "Sun", "Mon", "Tue"];
+let forecastHtml =`<div class="row">`;
+
+days.forEach(function(day) {
+forecastHtml = forecastHtml + `
+    
+  <div class="weather-forecast-day">${day}</div>
+  <div><img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png" alt="weather-icon" width="44">
+  </div>
+  <span class="weather-forecast-temperature-max">18°</span> <span class="weather-forecast-temperature-min"> 12°</span>`;
+})
+
+forecastElement.innerHTML = forecastHtml;
+
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Brisbane");
+displayForecast();
+
